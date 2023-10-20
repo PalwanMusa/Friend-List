@@ -2,8 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Modules</title>
+    <script src="jquery.js" defer></script>
+    <script src="app.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1 id="title">List friends</h1>
+
+      <div class="search-container">
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="Add friend" />
+          <button id="searchButton">Add friend</button>
+        </div>
+      </div>
+
+      <ul id="friendList" class="list-friends">
+        <li class="list-friend" onclick="removeFriend()"></li>
+      </ul>
+    </div>
+  </body>
 </html>
